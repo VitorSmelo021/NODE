@@ -1,8 +1,10 @@
 const url = require('url')
 
-const address = 'https://www.meusite.com.br/catalog?produtos=cadeira';
+const address = 'http://www.example.com/path?param1=value1&param2=value2#section';
 const parseUrl = new url.URL(address)
 
+
+console.log(parseUrl.protocol)
 console.log(parseUrl.host)
 console.log(parseUrl.pathname)
 console.log(parseUrl.search)
